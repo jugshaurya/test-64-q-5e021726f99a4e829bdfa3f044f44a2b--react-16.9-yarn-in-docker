@@ -27,7 +27,7 @@ const modalWrapper = (ChildComponent) => {
 
           <Modal show={this.state.show} onHide={this.handleClose}>
             <Modal.Header closeButton>
-              <Modal.Title>{modal_heading}</Modal.Title>
+              <Modal.Title variant="dark">{modal_heading}</Modal.Title>
             </Modal.Header>
             <Modal.Body>
               <ChildComponent handleClose={this.handleClose} {...this.props} />

@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { useState } from "react";
 import { Form, Col, Button } from "react-bootstrap";
 
 const AddForm = ({ handleClose, onSubmit }) => {
@@ -55,7 +55,11 @@ const AddForm = ({ handleClose, onSubmit }) => {
       location_type,
       location_string,
     };
-    await onSubmit(e, requestObj).then(handleClose).catch(console.log);
+    await onSubmit(e, requestObj)
+      .then(handleClose)
+      .catch((err) => {
+        console.log(err);
+      });
   };
 
   return (
