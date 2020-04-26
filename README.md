@@ -1,32 +1,30 @@
 # cj-app
-React SPA
 
+React SPA
 
 IMPORTANT NOTES:
 
     1. The backend endpoint host url can be accessed using "process.env.REACT_APP_API_URL" property. An example is shown in index.js.
-    2. PLEASE USE THIS PROPERTY ("process.env.REACT_APP_API_URL") WHEN YOU ARE TRYING TO CALL A BACKEND API. ALSO DON'T CHANGE THIS PROPERTY ELSE THE APP WILL NOT BUILD PROPERLY AND YOUR SUBMISSION WILL NOT BE SCORED. 
-    3. Make sure you follow the steps mentioned under "PROJECT START STEPS" and ensure that the steps execute successfully. 
-    4. Make sure you follow the steps mentioned under "DOCKER START STEPS" and ensure that the steps execute successfully. 
-
+    2. PLEASE USE THIS PROPERTY ("process.env.REACT_APP_API_URL") WHEN YOU ARE TRYING TO CALL A BACKEND API. ALSO DON'T CHANGE THIS PROPERTY ELSE THE APP WILL NOT BUILD PROPERLY AND YOUR SUBMISSION WILL NOT BE SCORED.
+    3. Make sure you follow the steps mentioned under "PROJECT START STEPS" and ensure that the steps execute successfully.
+    4. Make sure you follow the steps mentioned under "DOCKER START STEPS" and ensure that the steps execute successfully.
 
 PROJECT START STEPS:
 
     Pre-requisites:
-    1. Install http-server module (https://www.npmjs.com/package/http-server).
-    2. Install node, npm and yarn
+    1. [x] Install http-server module (https://www.npmjs.com/package/http-server).
+    2. [x] Install node, npm and yarn
 
     Steps:
-    1. To run this application, do the following:
+    1. [x] To run this application, do the following:
         1.a. Go to the project root directory.
         1.b. Run the following commands in the terminal/command line to build the app:
             - yarn
             - yarn run build (NOTE: make sure there in no webpack present before running this command in any directory above this directory.)
-        1.c. Run the following command(s) in the terminal/command line to run the app:    
-            - http-server ./build -p 4200 -a 0.0.0.0
-    
-    2. Go to http://localhost:4200 in your browser to view it.
+        1.c. Run the following command(s) in the terminal/command line to run the app:
+            - npx http-server ./build -p 4200 -a 0.0.0.0
 
+    2. Go to http://localhost:4200 in your browser to view it.
 
 DOCKER START STEPS:
 
@@ -39,10 +37,10 @@ DOCKER START STEPS:
         1.b. Run the following command(s) in the terminal/command line:
             - docker build -t cj-app .
 
-    2. Run the image in a container (Make sure port 4200 is available):        
+    2. Run the image in a container (Make sure port 4200 is available):
         2.a. Run the following command(s) in the terminal/command line:
             - docker run -i -p4200:4200 cj-app
-        2.b. Check the logs for any errors. 
+        2.b. Check the logs for any errors.
 
     3. Go to http://localhost:4200 in your browser to view it.
 
@@ -52,7 +50,7 @@ DOCKER STOP STEPS:
     1. Run the following commands:
         - docker ps
     2. Copy the container id and run the below command:
-        - docker stop <container_id> 
+        - docker stop <container_id>
         - docker system prune
 
 DOCKER LOGS:
@@ -81,3 +79,47 @@ DOCKER REMOVE IMAGE:
         - docker rmi <image_id>
         - docker system prune
 
+const temp = [
+{
+id: 1,
+updated_at: "2019-06-12T12:11:39.127842Z",
+created_at: "2019-06-12T12:11:39.127842Z",
+first_name: "Nilesh",
+last_name: "Agarwal",
+mobile: "9871028111",
+email: "abc@gmail.com",
+location_type: "City",
+location_string: "India",
+status: "Created",
+communication: "",
+tags: "",
+},
+{
+id: 2,
+updated_at: "2019-06-12T12:11:39.127842Z",
+created_at: "2019-06-12T12:11:39.127842Z",
+first_name: "Nilesh2",
+last_name: "Agarwal2",
+mobile: "98710281112",
+email: "abc@gmail2.com",
+location_type: "City2",
+location_string: "India2",
+status: "Created2",
+communication: "2",
+tags: "2",
+},
+{
+id: 3,
+updated_at: "2019-06-12T12:11:39.127842Z",
+created_at: "2019-06-12T12:11:39.127842Z",
+first_name: "Nilesh3",
+last_name: "Agarwal3",
+mobile: "98710281113",
+email: "abc@gmail3.com",
+location_type: "City3",
+location_string: "India3",
+status: "Created3",
+communication: "3",
+tags: "3",
+},
+];
